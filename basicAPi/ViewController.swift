@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     
     var test = " test variable"
+    var test2 = " test variable"
+    
   
     
     override func viewDidLoad() {

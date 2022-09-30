@@ -9,8 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var test = " test variable"
-    var test2 = " test variable dfsdfgs"
+//    var cosmicDate: Nasa?
     
   
     
@@ -22,15 +21,18 @@ class ViewController: UIViewController {
     private func request() {
         guard let url = URL(string:referense) else { return}
         URLSession.shared.dataTask(with: url) { date, response, error in
-            
             if let error = error {
                 print( error)
                 return
             }
-            
             guard let date = date else { return }
-            let nasa = String(data: date, encoding: .utf8)
-            print(nasa)
+            do{
+            let cosmicDate = try JSONDecoder().decode(Nasa.self, from: date)
+                print(cosmicDate.title)
+           
+            }catch{
+                print(error)
+            }
         } .resume()
        
         }

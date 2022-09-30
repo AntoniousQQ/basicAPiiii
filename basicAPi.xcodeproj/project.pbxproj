@@ -78,16 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				84DC87B528E388550055332A /* model */,
-				84DC87B428E3884E0055332A /* services */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		84DC87B428E3884E0055332A /* services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = services;
 			sourceTree = "<group>";
 		};
 		84DC87B528E388550055332A /* model */ = {

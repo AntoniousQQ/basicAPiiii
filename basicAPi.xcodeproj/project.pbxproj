@@ -14,6 +14,7 @@
 		84C64FB228E3667600179A6D /* basicAPi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84C64FB028E3667600179A6D /* basicAPi.xcdatamodeld */; };
 		84C64FB428E3667800179A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C64FB328E3667800179A6D /* Assets.xcassets */; };
 		84C64FB728E3667800179A6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C64FB528E3667800179A6D /* LaunchScreen.storyboard */; };
+		84DC87B228E37C1E0055332A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC87B128E37C1E0055332A /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		84C64FB328E3667800179A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C64FB628E3667800179A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84C64FB828E3667800179A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DC87B128E37C1E0055332A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,11 @@
 		84C64FA628E3667600179A6D /* basicAPi */ = {
 			isa = PBXGroup;
 			children = (
+				84DC87B328E388450055332A /* API */,
 				84C64FA728E3667600179A6D /* AppDelegate.swift */,
 				84C64FA928E3667600179A6D /* SceneDelegate.swift */,
 				84C64FAB28E3667600179A6D /* ViewController.swift */,
+				84DC87B128E37C1E0055332A /* Model.swift */,
 				84C64FAD28E3667600179A6D /* Main.storyboard */,
 				84C64FB328E3667800179A6D /* Assets.xcassets */,
 				84C64FB528E3667800179A6D /* LaunchScreen.storyboard */,
@@ -68,6 +72,29 @@
 				84C64FB028E3667600179A6D /* basicAPi.xcdatamodeld */,
 			);
 			path = basicAPi;
+			sourceTree = "<group>";
+		};
+		84DC87B328E388450055332A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				84DC87B528E388550055332A /* model */,
+				84DC87B428E3884E0055332A /* services */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		84DC87B428E3884E0055332A /* services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		84DC87B528E388550055332A /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DC87B228E37C1E0055332A /* Model.swift in Sources */,
 				84C64FAC28E3667600179A6D /* ViewController.swift in Sources */,
 				84C64FB228E3667600179A6D /* basicAPi.xcdatamodeld in Sources */,
 				84C64FA828E3667600179A6D /* AppDelegate.swift in Sources */,
@@ -292,6 +320,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BPPY7S4YUN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/basicAPi",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = basicAPi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -320,6 +352,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BPPY7S4YUN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/basicAPi",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = basicAPi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

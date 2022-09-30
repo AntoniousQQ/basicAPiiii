@@ -5,7 +5,7 @@
 
 import Foundation
 
-// MARK: - Welcome
+
 struct Nasa: Codable {
     let date: String
     let explanation: String

@@ -8,7 +8,15 @@
 import Foundation
 import UIKit
 
-class infoVC: UIViewController {
+class infoVC: UIViewController,ViewConrollerProtocol {
+    func cellDate(date: Nasa) {
+    
+    }
+    
+    
+ 
+
+    
     @IBOutlet private weak var label: UILabel!
     @IBOutlet private weak var imageView: UIImageView!
     
@@ -16,4 +24,7 @@ class infoVC: UIViewController {
         super.viewDidLoad()
         
     }
+    
+   
+  
 }

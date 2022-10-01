@@ -1,12 +1,20 @@
 
 import UIKit
 
+protocol ViewConrollerProtocol {
+    func cellDate(date: Nasa)
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
     var cosmicDate: Nasa?
-   
+    var delegate: ViewConrollerProtocol?
+  
+    func setup(){
+        delegate?.cellDate(date: cosmicDate!)
+    }
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +43,7 @@ class ViewController: UIViewController {
                 decoder.dateDecodingStrategy = .formatted(dateFormatter)
                 let cosmic = try decoder.decode(Nasa.self, from: date)
                 self.cosmicDate = cosmic.self
+                
                 print(cosmic)
            
             }catch{
